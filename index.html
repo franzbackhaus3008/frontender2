@@ -10,22 +10,50 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,400..900&display=swap');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .body__background { width: 100%; height: 100vh; background-color: hsl(47, 88%, 63%); font-family: "Figtree", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    .card__wrapper { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;}
+    .card { width: 384px; height: 528px; background-color: hsl(0, 0%, 100%); border-radius: 16px; border: 1px solid hsl(0, 0%, 7%); box-shadow: 8px 8px;}
+    .card__content { display: flex; flex-direction: column; height: 100%; justify-content: space-between;}
+    .card__content2 { padding: 24px; height: 100%;}
+    .avatar { display: flex; flex-direction: row; align-items: center; font-weight: bold;}
+    .text__wrapper { display: flex; justify-content: space-between; flex-direction: column;}
+    .learning__text { font-weight: 800;}
+    .learning__text p { background-color: hsl(47, 88%, 63%); width: fit-content; border-radius: 4px; padding-left: 12px; padding-right: 12px; padding-top: 4px; padding-bottom: 4px;}
+    .text1 { font-size: 14px; color: hsl(0, 0%, 7%); font-weight: 500;}
+    .text2 { font-size: 24px; font-weight: 800; color: hsl(0, 0%, 7%);}
+    .text2:hover { color: hsl(47, 88%, 63%); cursor: pointer;}
+    .text3 { font-size: 16px; color: hsl(0, 0%, 50%);}
   </style>
 </head>
-<body>
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
+<body style="margin:0;padding:0">
+  <div class="body__background">
+    <div class="card__wrapper">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__content2">
+            <img src="assets/images/illustration-article.svg" style="border-radius: 8px;"/>
+            <div class="text__wrapper">
+              <div class="learning__text">
+                <p>Learning</p>
+              </div>
+              <div>
+              <p class="text1">Published 21 Dec 2023</p>
+              <p class="text2">HTML & CSS foundations</p>
+              <p class="text3">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+              </div>
+              <div class="avatar">
+                <img src="assets/images/image-avatar.webp" style="width: 32px; height: 32px; margin-right: 16px;"/>
+                <p>Greg Hooper</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
